@@ -17,8 +17,7 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
     if (CouldMaybeBeYoutubeIDontKnow == "YouTube") {
         quaterSecondYoutubeCountForYoutubeThings++
     } else {
-        quaterSecondYoutubeCountForYoutubeThings
-     = 0
+        quaterSecondYoutubeCountForYoutubeThings = 0
     }
 
     if (quaterSecondYoutubeCountForYoutubeThings >= 4) {
