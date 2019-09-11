@@ -31,14 +31,14 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
     }
    	
 } else if(CouldMaybeBeChromeIDontKnow=="Word") {
-    a := "^{Tab}"
-	b := "^+{Tab}"
-	c := "^{w}"
+    a := "{WheelUp 1}"
+	b := "{WheelDown 1}"
+	c := ""
 
 }
 else{
-	a := "{WheelUp 1}"
-	b := "{WheelDown 1}"
+	a := "{Volume_Up}"
+	b := "{Volume_Down}"
 	c := "{Volume_Mute}"
 }
 
