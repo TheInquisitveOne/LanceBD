@@ -2,10 +2,10 @@
 SetTimer, Focus, 250
 return
 
-quaterSecondYoutubeCountForYoutubeThings = 0
+quaterSecondYoutubeCountForYoutubeThings := 0
 
 
-OfficeStuffForHelmetHeads =: ["Word","Excel"]
+OfficeStuffForHelmetHeads := ["Word","Excel"]
 
 Focus:
 WinGetActiveTitle, Name
@@ -36,7 +36,6 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
     rightsies := "{WheelDown 1}"
 	leftsies := "{WheelUp 1}"
 	clicksies := ""
-
 } else{
 	rightsies := "{Volume_Up}"
 	leftsies := "{Volume_Down}"
