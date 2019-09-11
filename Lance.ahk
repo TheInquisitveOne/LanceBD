@@ -22,13 +22,12 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
     if (quaterSecondYoutubeCountForYoutubeThings >= 4) {
         rightsies := "{Volume_Up}"
 	    leftsies := "{Volume_Down}"
-	    clicksies := "{Volume_Mute}"
+	    clicksies := "{k}"
     } else {
         rightsies := "^{Tab}"
 	    leftsies := "^+{Tab}"
 	    clicksies := "^{w}"
     }
-   	
 } else if(CouldMaybeBeChromeIDontKnow=="Word") {
     rightsies := "{WheelDown 1}"
 	leftsies := "{WheelUp 1}"
