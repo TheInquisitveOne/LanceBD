@@ -4,9 +4,6 @@ return
 
 quaterSecondYoutubeCountForYoutubeThings := 0
 
-
-OfficeStuffForHelmetHeads := ["Word","Excel"]
-
 Focus:
 WinGetActiveTitle, Name
 NameSplit := StrSplit(Name, A_Space)
