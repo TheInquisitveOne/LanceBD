@@ -30,10 +30,15 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
 	    c := "^{w}"
     }
    	
+} else if(CouldMaybeBeChromeIDontKnow=="Word") {
+    a := "^{Tab}"
+	b := "^+{Tab}"
+	c := "^{w}"
+
 }
 else{
-	a := "{Volume_Up}"
-	b := "{Volume_Down}"
+	a := "{WheelUp 1}"
+	b := "{WheelDown 1}"
 	c := "{Volume_Mute}"
 }
 
