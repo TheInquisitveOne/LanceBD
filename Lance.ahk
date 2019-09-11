@@ -2,20 +2,41 @@
 SetTimer, Focus, 250
 return
 
+quaterSecondYoutubeCountForYoutubeThings = 0
+
 Focus:
 WinGetActiveTitle, Name
 NameSplit := StrSplit(Name, A_Space)
-OutputVar := % "" NameSplit[NameSplit.Length()]
-if (OutputVar=="Chrome"){
-   	a := "^{Tab}"
-	b := "^+{Tab}"
-	c := "^{w}"
+CouldMaybeBeChromeIDontKnow := % "" NameSplit[NameSplit.Length()]
+if (CouldMaybeBeChromeIDontKnow=="Chrome"){
+    if (NameSplit.Length() >= 4) {
+        CouldMaybeBeYoutubeIDontKnow = % "" NameSplit[NameSplit.Length() - 3]
+    } else {
+        CouldMaybeBeYoutubeIDontKnow = "Definitely probably not youtube, probably, I don't know"
+    }
+    if (CouldMaybeBeYoutubeIDontKnow == "YouTube") {
+        quaterSecondYoutubeCountForYoutubeThings
+    ++
+    } else {
+        quaterSecondYoutubeCountForYoutubeThings
+     = 0
+    }
+
+    if (quaterSecondYoutubeCountForYoutubeThings >= 4) {
+        a := "{Volume_Up}"
+	    b := "{Volume_Down}"
+	    c := "{Volume_Mute}"
+    } else {
+        a := "^{Tab}"
+	    b := "^+{Tab}"
+	    c := "^{w}"
+    }
+   	
 }
 else{
 	a := "{Volume_Up}"
 	b := "{Volume_Down}"
 	c := "{Volume_Mute}"
-	
 }
 
 
