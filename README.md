@@ -14,4 +14,4 @@ C:\Users\<Username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startu
 ```
 You must then right click on the Lance.ahk file and click run.
 
-**CONGRATULATIONS!** You have now installed the ** *Spinny Clicky Boi 9000* **
+**CONGRATULATIONS!** You have now installed the **_Spinny Clicky Boi 9000_**
