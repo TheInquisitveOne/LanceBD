@@ -32,7 +32,11 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
 	    clicksies := "^{w}"
     }
    	
-} else if(CouldMaybeBeChromeIDontKnow in OfficeStuffForHelmetHeads) {
+} else if(CouldMaybeBeChromeIDontKnow=="Word") {
+    rightsies := "{WheelDown 1}"
+	leftsies := "{WheelUp 1}"
+	clicksies := ""
+} else if(CouldMaybeBeChromeIDontKnow=="Excel") {
     rightsies := "{WheelDown 1}"
 	leftsies := "{WheelUp 1}"
 	clicksies := ""
