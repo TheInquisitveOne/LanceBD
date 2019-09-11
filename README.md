@@ -1,7 +1,7 @@
 # Spinny Clicky Boi 9000
 This is a spinny clicky boi that has been created solely for the purpose of Lance John Robinson's 23rd birthday (And for Rory's personal use because he thought it was so cool that he made one for himself too).
 
-## Functuinality
+## Functionality
 
 ### General Media Mode
 In the general media mode, the dial becomes a volume controller and can be used as follows:
@@ -17,7 +17,7 @@ Clicksies - Mute
 ### Chrome Mode
 In the chrome mode, the dial becomes a tab controller, allowing for tab scrolling and closing.
 
-**NOTE:** If the user is in youtube for more than 1 second, the dial switches to media mode, but with clicksies pausing the youtube video instead of muting. Change to a different tab to re-enable chrome mode.
+**NOTE:** If the user is in youtube for more than 1 second, the dial switches to media mode, but with clicksies pausing the youtube video instead of muting the volume. Change to a different tab to re-enable chrome mode.
 ```
 Rightsies - Scroll right in tabs
 ```
@@ -28,14 +28,15 @@ Leftsies - Scroll left in tabs
 Clicksies - Close tab
 ```
 ### Office Mode
+In the office mode, we have enabled the dial to help you with all of your most taxing scrolly-boi needs.
 ```
-Rightsies - Volume Up
-```
-```
-Leftsies - Volume Down
+Rightsies - Scroll down
 ```
 ```
-Clicksies - Mute
+Leftsies - Scroll up
+```
+```
+Clicksies - No functionality (Speak to your benevolent coders if you have an idea for fuynctionality here)
 ```
 ## Instalation Instructions
 ### AHK Script
