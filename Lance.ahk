@@ -27,7 +27,7 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
 	    leftsies := "{Volume_Down}"
 	    clicksies := "{Volume_Mute}"
     } else {
-        righsies := "^{Tab}"
+        rightsies := "^{Tab}"
 	    leftsies := "^+{Tab}"
 	    clicksies := "^{w}"
     }
@@ -37,8 +37,7 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
 	leftsies := "{WheelUp 1}"
 	clicksies := ""
 
-}
-else{
+} else{
 	rightsies := "{Volume_Up}"
 	leftsies := "{Volume_Down}"
 	clicksies := "{Volume_Mute}"
