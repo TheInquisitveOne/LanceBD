@@ -6,9 +6,12 @@ This is a spinny clicky boi that has been created solely for the purpose of Lanc
 
 ## Instalation Instructions
 ### AHK Script
-First you will need to install Autohotkey on your Windows computer from 
+First you will need to install Autohotkey on your Windows computer from https://autohotkey.com/download/.
 
 Then you will need to insert the Lance.ahk file into the following folder on your Windows computer:
 ```
 C:\Users\<Username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ```
+You must then right click on the Lance.ahk file and click run.
+
+**CONGRATULATIONS!** You have now installed the ** *Spinny Clicky Boi 9000* **
