@@ -15,8 +15,7 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
         CouldMaybeBeYoutubeIDontKnow = "Definitely probably not youtube, probably, I don't know"
     }
     if (CouldMaybeBeYoutubeIDontKnow == "YouTube") {
-        quaterSecondYoutubeCountForYoutubeThings
-    ++
+        quaterSecondYoutubeCountForYoutubeThings++
     } else {
         quaterSecondYoutubeCountForYoutubeThings
      = 0
