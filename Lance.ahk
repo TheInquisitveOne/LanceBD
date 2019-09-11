@@ -4,6 +4,9 @@ return
 
 quaterSecondYoutubeCountForYoutubeThings = 0
 
+
+OfficeStuffForHelmetHeads =: ["Word","Excel"]
+
 Focus:
 WinGetActiveTitle, Name
 NameSplit := StrSplit(Name, A_Space)
@@ -19,36 +22,35 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
     } else {
         quaterSecondYoutubeCountForYoutubeThings = 0
     }
-
     if (quaterSecondYoutubeCountForYoutubeThings >= 4) {
-        a := "{Volume_Up}"
-	    b := "{Volume_Down}"
-	    c := "{Volume_Mute}"
+        rightsies := "{Volume_Up}"
+	    leftsies := "{Volume_Down}"
+	    clicksies := "{Volume_Mute}"
     } else {
-        a := "^{Tab}"
-	    b := "^+{Tab}"
-	    c := "^{w}"
+        righsies := "^{Tab}"
+	    leftsies := "^+{Tab}"
+	    clicksies := "^{w}"
     }
    	
-} else if(CouldMaybeBeChromeIDontKnow=="Word") {
-    a := "{WheelUp 1}"
-	b := "{WheelDown 1}"
-	c := ""
+} else if(CouldMaybeBeChromeIDontKnow in OfficeStuffForHelmetHeads) {
+    rightsies := "{WheelDown 1}"
+	leftsies := "{WheelUp 1}"
+	clicksies := ""
 
 }
 else{
-	a := "{Volume_Up}"
-	b := "{Volume_Down}"
-	c := "{Volume_Mute}"
+	rightsies := "{Volume_Up}"
+	leftsies := "{Volume_Down}"
+	clicksies := "{Volume_Mute}"
 }
 
 
 
-F22:: Send %a%
+F22:: Send %rightsies%
 return
-F23:: Send %b%
+F23:: Send %leftsies%
 return
 F24:: 
-	Send %c%
+	Send %clicksies%
 	Sleep, 200
 return
