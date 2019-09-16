@@ -3,7 +3,7 @@ SetTimer, Focus, 250
 return
 
 quaterSecondYoutubeCountForYoutubeThings := 0
-
+thisIsTheOldYoutubeVideoUntilItIsnt := ""
 Focus:
 WinGetActiveTitle, Name
 NameSplit := StrSplit(Name, A_Space)
@@ -15,7 +15,14 @@ if (CouldMaybeBeChromeIDontKnow=="Chrome"){
         CouldMaybeBeYoutubeIDontKnow = "Definitely probably not youtube, probably, I don't know"
     }
     if (CouldMaybeBeYoutubeIDontKnow == "YouTube") {
-        quaterSecondYoutubeCountForYoutubeThings++
+        ; This if statement ensures that the youtube counter only increments if the video in the
+        ; tab is the same as the last increment 
+        if (thisIsTheOldYoutubeVideoUntilItIsnt == NameSplit[1]) {
+            quaterSecondYoutubeCountForYoutubeThings++
+        } else {
+            quaterSecondYoutubeCountForYoutubeThings = 0
+        }
+        thisIsTheOldYoutubeVideoUntilItIsnt = NameSplit[1]
     } else {
         quaterSecondYoutubeCountForYoutubeThings = 0
     }
